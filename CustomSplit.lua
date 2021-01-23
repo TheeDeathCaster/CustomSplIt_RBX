@@ -1,6 +1,5 @@
 local function Split(String, Separator, Limit)
-	if Limit and Limit > 0 then
-		Limit -= 1
+	if type(Limit) == "number" and Limit > 0 then
 		local Counter = 0
 		local Splits = {}
 		local StartLine = {1}
